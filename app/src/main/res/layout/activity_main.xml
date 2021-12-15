@@ -18,8 +18,17 @@
             android:layout_height="wrap_content"
             android:text="Project Approval Status"
             android:textSize="11pt"></TextView>
-
         <ProgressBar
+            android:id="@+id/simpleProgressBar_background"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:indeterminateOnly="false"
+            android:max="128"
+            android:progress="100"
+
+            android:progressDrawable="@drawable/custom_progress_background" />
+        <ProgressBar
+            android:layout_marginTop="-200dp"
             android:id="@+id/simpleProgressBar"
             android:layout_width="200dp"
             android:layout_height="200dp"

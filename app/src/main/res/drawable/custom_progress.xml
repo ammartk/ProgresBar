@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
-        <shape
-            android:shape="ring"
-            android:thicknessRatio="24"
-            android:useLevel="false">
-            <solid android:color="#DDDDDD" />
-        </shape>
-    </item>
-    <item>
         <rotate android:fromDegrees="130"
             android:toDegrees="130">
 
