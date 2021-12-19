@@ -1,56 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     tools:context=".MainActivity">
+
     <LinearLayout
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
         android:background="@drawable/widget_background"
+        android:gravity="center"
+        android:orientation="vertical"
         android:padding="20dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Project Approval Status"
             android:textSize="11pt"></TextView>
-        <ProgressBar
-            android:id="@+id/simpleProgressBar_background"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:indeterminateOnly="false"
-            android:max="128"
-            android:progress="100"
 
-            android:progressDrawable="@drawable/custom_progress_background" />
-        <ProgressBar
-            android:layout_marginTop="-200dp"
-            android:id="@+id/simpleProgressBar"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:indeterminateOnly="false"
-            android:max="128"
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            app:indicatorSize="155dp"
+            android:rotation="230"
             android:progress="65"
+            android:max="138"
+            app:trackCornerRadius="15dp"
+            app:trackThickness="15dp"
+            app:trackColor="#f1f2f7"
+            app:indicatorColor="#438ce8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-            android:progressDrawable="@drawable/custom_progress" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-110dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#2a3a75"
+            android:textStyle="bold"
+            tools:text="65%" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:text="65%"
-        android:textStyle="bold"
-        android:layout_marginTop="-120dp"
-        android:textColor="#2a3a75"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Approved Projects"
-        android:textSize="9dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approved Projects"
+            android:textSize="9dp" />
     </LinearLayout>
+
+
 
 </RelativeLayout>
